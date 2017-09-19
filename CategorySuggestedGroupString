@@ -1,0 +1,37 @@
+import System
+static def GetAttributeValue(Incident):
+	Value = "Calculation was blank"
+	if Incident.Category != null:
+		Group = Incident.Category._Group
+		//return Group.Name
+	//If group is not support and AV, then we don't really care about the location, just return the suggested group
+	//if Group.Title != "DTS - AV" and  Group.Title != "DTS - Support":
+	if Group.Name != "AV" and Group.Name != "Techs":
+		//then return suggest group.
+		Value = Group.Title
+		
+	else:
+	//Group is AV or Support
+	//then calculate group - territory e.g. DTS - Av - South
+		if Incident._OverrideLocation == true: 
+			//override location is true
+			//use LocationString to get "override location"
+			Loc = Incident._LocationString
+		else:
+			//override location is not checked.
+			//use user's location 
+			Loc = Incident._UserLocation._Location
+		
+		//This is outside the if/else, and runs for both
+		Loc2 = Incident.GetNamedObject("System._Location", Loc)
+		Territory = Loc2["_Territory"]
+		strTerritory = Territory.ToString()
+		if Group.Name == "AV":		Value= Group.Title + " - " + strTerritory  //e.g. DTS - AV - South
+		elif Group.Name == "Techs":
+			Substring = Group.Title.Substring(0,3)
+			Value = Substring + " - " + strTerritory + " - Support"
+
+			//Value= "DDI - " + strTerritory + " - Support"
+	
+		
+	return Value
