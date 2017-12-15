@@ -9,6 +9,20 @@
 		<td width="85%">{Id}</td>
 	</tr>
 	<tr>
+		<td width="15%" align="right"><b>Impact:</b></td>
+		<td width="85%"> {_Impact}
+		</td>
+	</tr>
+	<tr>
+		<td width="15%" align="right"><b>Urgency:</b></td>
+		<td width="85%">
+		</td>{_IncidentUrgency}
+	</tr>
+	<tr>
+		<td width="15%" align="right"><b>Response Level:</b></td>
+		<td width="85%"> {ResponseLevel/Title}</td>
+	</tr>
+	<tr>
 		<td width="15%" align="right"><b>Summary:</b></td>
 		<td width="85%">{Title}</td>
 	</tr>
@@ -34,10 +48,6 @@
 	<tr>
 		<td valign="top" width="15%" align="right"><b>Category:</b></td>
 		<td width="85%">{Category/FullName}</td>
-	</tr>
-	<tr>
-		<td valign="top" width="15%" align="right"><b>Assistance With:</b></td>
-		<td width="85%">{_UserSelectableCategory/FullName}</td>
 	</tr>
 	<tr>
 		<td valign="top" width="15%" align="right"><b>Selected Location:</b></td>
