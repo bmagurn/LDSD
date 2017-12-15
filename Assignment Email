@@ -1,9 +1,27 @@
-<!-- Generic Assignment Template-->
+<!-- Generic Assignment Template v2.2-->
 <table border="0" width="100%" cellpadding="3">
 	<tr>
 		<td colspan="2"><P>Update: Incident: {Id} has been assigned to your group, {CurrentAssignment/Group/Title}</p>
 		</td>
 	</tr>
+	<tr>
+		<td width="15%" align="right"><b>Response Level:</b></td>
+		<td width="85%">{ResponseLevel/Title}</td>
+	</tr>
+	<tr>
+		<td width="15%" align="right"><b>Response Level Description:</b></td>
+		<td width="85%"> {ResponseLevel/Description}</td>
+	</tr>
+	<tr>
+		<td width="15%" align="right"><b>Response Level Description:</b></td>
+		<td width="85%"> {ResponseLevel/Description}</td>
+	</tr>
+	<tr>
+		<td width="15%" align="right"><b>Turnaround Time :</b></td>
+		<td width="85%"> {ResponseLevel/TurnaroundTime} (min)</td>
+	</tr>
+	 	
+	
 	<tr>
 		<td width="15%" align="right"><b>Reference No:</b></td>
 		<td width="85%">{Id}</td>
