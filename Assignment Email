@@ -6,13 +6,11 @@
 	</tr>
 	<tr>
 		<td width="15%" align="right"><b>Impact:</b></td>
-		<td width="85%"> {_Impact}
-		</td>
+		<td width="85%"> {_Impact}</td>
 	</tr>
 	<tr>
 		<td width="15%" align="right"><b>Urgency:</b></td>
-		<td width="85%">
-		</td>{_IncidentUrgency}
+		<td width="85%">{_IncidentUrgency}</td>
 	</tr>
 	<tr>
 		<td width="15%" align="right"><b>Response Level:</b></td>
