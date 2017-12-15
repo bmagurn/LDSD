@@ -13,10 +13,6 @@
 		<td width="85%"> {ResponseLevel/Description}</td>
 	</tr>
 	<tr>
-		<td width="15%" align="right"><b>Response Level Description:</b></td>
-		<td width="85%"> {ResponseLevel/Description}</td>
-	</tr>
-	<tr>
 		<td width="15%" align="right"><b>Turnaround Time :</b></td>
 		<td width="85%"> {ResponseLevel/TurnaroundTime} (min)</td>
 	</tr>
